@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جنة الخضرة | لتنسيق الحدائق واللاندسكيب</title>
+    <!-- استدعاء مكتبة Tailwind CSS للتصميم السريع -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- شريط التنقل (Navbar) -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-green-700 flex items-center gap-2">
+                🌿 جنة الخضرة
+            </a>
+            <nav class="hidden md:flex gap-8 font-semibold text-gray-600">
+                <a href="#home" class="hover:text-green-600 transition">الرئيسية</a>
+                <a href="#services" class="hover:text-green-600 transition">خدماتنا</a>
+                <a href="#gallery" class="hover:text-green-600 transition">أعمالنا</a>
+                <a href="#about" class="hover:text-green-600 transition">من نحن</a>
+                <a href="#contact" class="hover:text-green-600 transition">اتصل بنا</a>
+            </nav>
+            <div>
+                <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-full font-semibold shadow transition duration-300">احجز استشارة</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section id="home" class="relative bg-cover bg-center h-[600px] flex items-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1558904541-efa874a74214?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container mx-auto px-6 text-white text-center md:text-right">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">حول حديقتك إلى <span class="text-green-400">جنة ساحرة</span></h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl font-light">نحن نبتكر تصاميم عصرية للحدائق المنزلية والعامة تناسب ذوقك وتمنحك الراحة والطبيعة التي تستحقها.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-bold text-lg shadow-lg transition">تواصل معنا الآن</a>
+                <a href="#services" class="bg-white/20 hover:bg-white/30 backdrop-blur border border-white text-white px-8 py-3 rounded-lg font-bold text-lg transition">استكشف الخدمات</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات (Services) -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">خدماتنا المتكاملة</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">نقدم لك حلولاً شاملة لتصميم وتنسيق وصيانة الحدائق بأعلى معايير الجودة.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- خدمة 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100 text-center">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">🏡</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">تصميم وتنسيق الحدائق</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">تصميم لاندسكيب عصري وحديث يناسب مساحة منزلك، مع توزيع دقيق للنباتات والإضاءة.</p>
+                </div>
+                <!-- خدمة 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100 text-center">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">💧</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">شبكات الري الحديثة</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">تركيب أنظمة ري أتوماتيكية ويدوية موفرة للمياه لضمان حيوية ونضارة حديقتك طوال العام.</p>
+                </div>
+                <!-- خدمة 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition border border-gray-100 text-center">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-6">✂️</div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">الصيانة الدورية</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">قص وتهذيب الأشجار والنجيلة الصناعية والطبيعية، ومكافحة الآفات ورش الأسمدة بانتظام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- معرض الأعمال (Gallery) -->
+    <section id="gallery" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-3">معرض أعمالنا</h2>
+                <p class="text-gray-500 max-w-xl mx-auto">نظرة على بعض مشاريعنا المنفذة للحدائق المنزلية والفلل.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="overflow-hidden rounded-xl shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=600&q=80" alt="حديقة منزلية" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1592417817098-8f3d691a4bf5?auto=format&fit=crop&w=600&q=80" alt="لاندسكيب" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="overflow-hidden rounded-xl shadow-md group">
+                    <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=600&q=80" alt="تنسيق عشب" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اتصل بنا (Contact Section) -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-green-700 rounded-3xl shadow-xl p-8 md:p-12 text-white">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-bold mb-2">تواصل معنا اليوم</h2>
+                    <p class="text-green-100">احصل على استشارة مجانية وعرض سعر لنسخ وتصميم حديقتك الخاصة.</p>
+                </div>
+                <form id="contactForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block mb-2 text-sm font-semibold">الاسم الكامل</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg bg-green-800 border border-green-600 text-white placeholder-green-300 focus:outline-none focus:border-white" placeholder="أدخل اسمك">
+                        </div>
+                        <div>
+                            <label class="block mb-2 text-sm font-semibold">رقم الهاتف</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-lg bg-green-800 border border-green-600 text-white placeholder-green-300 focus:outline-none focus:border-white" placeholder="رقم الهاتف للتواصل">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-sm font-semibold">الخدمة المطلوبة</label>
+                        <select class="w-full px-4 py-3 rounded-lg bg-green-800 border border-green-600 text-white focus:outline-none focus:border-white">
+                            <option>تصميم وتنسيق حديقة جديدة</option>
+                            <option>تركيب شبكات ري</option>
+                            <option>صيانة دورية للحدائق</option>
+                            <option>توريد عشب ونباتات</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block mb-2 text-sm font-semibold">تفاصيل الطلب أو المساحة</label>
+                        <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-green-800 border border-green-600 text-white placeholder-green-300 focus:outline-none focus:border-white" placeholder="أخبرنا بالمساحة أو تفاصيل رغبتك..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-white text-green-800 font-bold py-3 rounded-lg hover:bg-green-50 transition duration-300 shadow">إرسال الطلب</button>
+                </form>
+                <div id="successMessage" class="hidden mt-6 p-4 bg-green-600 text-white text-center rounded-lg font-semibold">
+                    تم إرسال طلبك بنجاح! سنتواصل معك قريباً.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- التذييل (Footer) -->
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <div class="container mx-auto px-6">
+            <h3 class="text-2xl font-bold text-green-500 mb-4">🌿 جنة الخضرة</h3>
+            <p class="text-gray-400 text-sm mb-6">نصنع الجمال ونزرع الراحة في كل زاوية من حديقتك.</p>
+            <p class="text-gray-500 text-xs">جميع الحقوق محفوظة © 2026</p>
+        </div>
+    </footer>
+
+    <!-- سكود بسيط لتأكيد الإرسال -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('successMessage').classList.remove('hidden');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+  
